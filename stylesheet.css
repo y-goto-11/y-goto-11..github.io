@@ -1,0 +1,52 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+span {
+  font-weight: bold;
+  color: blue;
+}
+
+
+.header {
+  text-align: center;
+}
+
+
+.contents {
+  margin-top : 100px;
+  margin-left : 200px;
+  margin-right : 200px;
+}
+
+.conclusion {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #EEEEEE;
+  border: solid 2px #808080;
+  width: 800px;
+}
+
+.conclusion li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contents h1 {
+  border-bottom: 2px solid #dee7ec;
+}
+
+
+.content-item {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content-item h2 {
+  border-left: 2px solid #0099FF;
+  padding-left: 10px;
+}
+
+.form-item {
+  margin: 20px 0;
+}
