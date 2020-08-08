@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>ダイエットの結論　~結局ダイエットって何すればいいの？~ </title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="js/calculation.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
   </head>
   <body>
     <div class="header">
       <h1>ダイエットの結論　~結局ダイエットって何すればいいの？~ </h1>
-      <img src="https://p2.piqsels.com/preview/289/287/727/lose-weight-weight-loss-belly-losing-weight.jpg"></img>
+      <img src="https://p2.piqsels.com/preview/289/287/727/lose-weight-weight-loss-belly-losing-weight.jpg">
     </div>
 
     <div class="contents">
       <h1>結論</h1>
-      <p>正しいダイエットとは<span>体重を落とすことではなく、体脂肪を落とすこと</span>です。</br>そのためには、結論として以下の2点に気をつけることが必要です。</p>
+      <p>正しいダイエットとは<span>体重を落とすことではなく、体脂肪を落とすこと</span>です。<br>そのためには、結論として以下の2点に気をつけることが必要です。</p>
         <ol class="conclusion">
           <li>消費カロリー > 摂取カロリーを厳守する</li>
           <li>筋肉量を落とさない</li>
@@ -35,8 +37,8 @@
 
         <div class="content-item">
           <h2>筋肉量を落とさない</h2>
-          <p>しかし、<span>消費カロリー > 摂取カロリーを厳守する</span>ために、食事制限だけをしていてもダイエットとしてよくありません。</br>
-            なぜなら、脂肪と合わせて筋肉量が落ちてしまうからです。筋肉量が落ちてしまうと、基礎代謝も減ってしまい、結果的にリバウンドを誘発します。したがって、食事制限をして摂取カロリーを減らしながら、筋肉量は保持しなければいけません。</br>
+          <p>しかし、<span>消費カロリー > 摂取カロリーを厳守する</span>ために、食事制限だけをしていてもダイエットとしてよくありません。<br>
+            なぜなら、脂肪と合わせて筋肉量が落ちてしまうからです。筋肉量が落ちてしまうと、基礎代謝も減ってしまい、結果的にリバウンドを誘発します。したがって、食事制限をして摂取カロリーを減らしながら、筋肉量は保持しなければいけません。<br>
             では、筋肉量を落とさないために何をすべきなのか。それは、<span>筋トレ</span>です。筋トレをすることで、基礎代謝の維持・上昇が期待されます。それにより。消費カロリーの低下を防ぐことができます。
           </p>
         </div>
@@ -45,36 +47,122 @@
 
     <div class="contents">
       <h1>消費カロリー計算</h1>
-      <p>下記項目に自分の情報を入力し、計算ボタンを押してください。自動であなたの消費カロリーが計算されます。</p>
+      <p>下記項目に自分の情報を入力し、計算ボタンを押してください。自動であなたの消費カロリーが計算されます。<br>※エネルギー消費量を計るもっとも正確な手法である二重標識水法で計算しています。</p>
 
-      <form class="form">
+      <form name="form1">
         <div class = "form-item">
           <label> 性別:
-            <input type="radio" name="sex" value="men">男
-            <input type="radio" name="sex" value="women">女
+            <input type="radio" name="sex" value="male">男
+            <input type="radio" name="sex" value="female">女
           </label>
         </div>
         <div class = "form-item">
           <label>年齢:
-            <input type="number" name="age" min="0", max="100">歳
+            <input type="number" name="age" min="1" max="100">歳
           </label>
         </div>
         <div class = "form-item">
-          <label>身体活動レベル:
-            <div><input type="radio" name="level" value="level1">レベル1（低い）</div>
-            <div><input type="radio" name="level" value="level2">レベル2（普通）</div>
-            <div><input type="radio" name="level" value="level3">レベル3（高い）</div>
+          <label>体重:
+            <input type="number" name="weight" min="1" max="100">kg
           </label>
         </div>
         <div class = "form-item">
-          <input class="form-item-culclation" type="submit" value="計算">
+          <input type="button" value="計算" onClick="myfunc()">
         </div>
       </form>
+      <div class = "calcResult" id = "calcResult"></div>
     </div>
 
     <div class="contents">
+      <h1>おすすめダイエット方法</h1>
+      <p>巷にはたくさんのダイエット方法がありますが、ここでは3つのおすすめダイエット方法を紹介します。</p>
 
+      <div class="content-item">
+        <h2>糖質制限ダイエット</h2>
+        <p>炭水化物の摂取を制限し、その代わりにタンパク質の摂取量を多くすることによって、脂肪の原因となる糖質の摂取を制限しようというダイエットです。<br>
+           実際にどのような食事をすれば良いのかが簡単にわかる、おすすめの参考書籍を紹介します。
+        </p>
+
+        <div class="intro-content">
+          <iframe style="width:120px;height:240px;"
+          marginwidth="0"
+          marginheight="0"
+          scrolling="no"
+          frameborder="0"
+          src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=ygoto-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4785954833&linkId=70643f333cba4e53c949e78fd88d00f0&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+          </iframe>
+        </div>
+        <p>精神科医でありながら、漫画の作成も行うゆうきゆう先生の<span>『マンガで分かる肉体改造 糖質制限編 (ヤングキングコミック)』</span>です。<br>
+           ギャグ要素満載ですが、これを読めばどのように糖質制限を行えば良いかよくわかります。糖質制限の導入におすすめの一冊です。
+        </p>
+      </div>
+
+      <div class="content-item">
+        <h2>プチ断食ダイエット</h2>
+        <p>あの有名なメンタリストDaiGoがおすすめするダイエット方法です。彼のYouTubeで、科学的に効果が証明されたプチ断食が説明されています。<br>
+           簡単に言えば、(男性の場合)1日の食事を8時間以内にすませ、最後の食事から次の日の食事まで16時間の間隔を空ける、というダイエット方法です。<br>
+           自然と摂取カロリーを減らすことができるらしいです。詳細はYouTubeを参照してください。
+        </p>
+
+        <div class="intro-content">
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/51bGjLRPxoM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+      　  </iframe>
+        </div>
+      </div>
+
+      <div class="content-item">
+        <h2>HIITトレーニング</h2>
+        <p>最後に紹介するのは、ダイエット中におすすめしたいトレーニング方法です。体脂肪を減らすと同時に筋肉量を増やし、常に体を「脂肪燃焼モード」にする効果が高い、「HIIT（高強度インターバルトレーニング）」と呼ばれるトレーニングです。<br>
+           具体的には、<span>強い負荷の筋トレを20秒行っては10秒休む、というのを4種目、2周分繰り返す</span>、というトレーニングをやるだけです。<span>1日4分</span>で完了するトレーニングなので、忙しい社会人の方にもおすすめのトレーニング方法となります。YouTubeで様々なHIITの種目が紹介されているので、ぜひ参照してください。ここでは、自宅でもできる動画を紹介します。
+        </p>
+
+        <div class = "intro-content">
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/UZJOLmMDqu8"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <p>
+          最後に、HIITを300日間やり続けた猛者の動画を紹介します！継続すれば必ず理想の体が手に入る！そんな夢を見させてくれた動画でした。
+        </p>
+
+        <div class= "intro-content">
+          <div>100日継続</div>
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/wH4Zl4Q9TSg"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class= "intro-content">
+          <div>200日継続</div>
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/UdcWHb4ZxQc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class= "intro-content">
+          <div>300日継続 + 30日の食事制限</div>
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/EoA99_AKfiQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
