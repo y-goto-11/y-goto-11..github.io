@@ -7,9 +7,15 @@ span {
   color: blue;
 }
 
-
 .header {
   text-align: center;
+  width: 75%;
+  margin-left : 10%;
+  margin-right : 15%;
+}
+
+.header img {
+  width: 100%;
 }
 
 .contents {
@@ -38,7 +44,6 @@ span {
 .contents h1 {
   border-bottom: 2px solid #dee7ec;
 }
-
 
 .content-item {
   margin-top: 50px;
