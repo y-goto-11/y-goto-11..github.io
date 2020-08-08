@@ -12,7 +12,6 @@ span {
   text-align: center;
 }
 
-
 .contents {
   margin-top : 100px;
   margin-left : 200px;
@@ -49,4 +48,13 @@ span {
 
 .form-item {
   margin: 20px 0;
+}
+
+.calcResult {
+  font-size: 40px;
+  margin: 50px 0 0 100px;
+}
+
+.intro-content {
+  margin:30px 0;
 }
