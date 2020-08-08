@@ -14,8 +14,10 @@ span {
 
 .contents {
   margin-top : 100px;
-  margin-left : 200px;
-  margin-right : 200px;
+  box-sizing: border-box;
+  width: 75%;
+  margin-left : 10%;
+  margin-right : 15%;
 }
 
 .conclusion {
@@ -23,7 +25,9 @@ span {
   font-weight: bold;
   background-color: #EEEEEE;
   border: solid 2px #808080;
-  width: 800px;
+  box-sizing: border-box;
+  width: 80%;
+  margin-right: 20%;
 }
 
 .conclusion li {
